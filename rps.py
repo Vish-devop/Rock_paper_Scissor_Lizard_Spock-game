@@ -43,7 +43,7 @@ while True:
     except ValueError as e:
         range_str = f"[0, {len(Action) - 1}]"
         print(f"Invalid selection. Enter a value in range {range_str}")
-        continue
+        continue;
 
     computer_action = get_computer_selection()
     determine_winner(user_action, computer_action)
